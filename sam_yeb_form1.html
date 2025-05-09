@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAM YEB DESIGNS – Customer Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="file"] {
+      margin-top: 8px;
+    }
+
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 12px;
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formsubmit.co/sammy123000@icloud.com" method="POST" enctype="multipart/form-data">
+    <h2>SAM YEB DESIGNS</h2>
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="Full Name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="Phone Number">
+
+    <label for="service">Service Needed:</label>
+    <select id="service" name="Service Needed">
+      <option value="flyer">Flyer Design</option>
+      <option value="video">Video Advert</option>
+      <option value="quote">Motivational Quote</option>
+      <option value="story">Story Writing</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="description">Project Description:</label>
+    <textarea id="description" name="Project Description" rows="4"></textarea>
+
+    <label for="deliveryDate">Preferred Delivery Date:</label>
+    <input type="date" id="deliveryDate" name="Preferred Delivery Date">
+
+    <label for="fileUpload">Upload Files (if any):</label>
+    <input type="file" id="fileUpload" name="Attachment">
+
+    <label for="referral">How did you hear about us?</label>
+    <select id="referral" name="Referral Source">
+      <option value="instagram">Instagram</option>
+      <option value="facebook">Facebook</option>
+      <option value="friend">Friend/Referral</option>
+      <option value="website">Website</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="notes">Additional Notes:</label>
+    <textarea id="notes" name="Additional Notes" rows="4"></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Form Submission from SAM YEB DESIGNS">
+    <input type="hidden" name="_template" value="box">
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
